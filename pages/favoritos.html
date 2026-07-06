@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Favoritos | Yamaha Store</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="icon" type="image/png" href="/imagens/yamahaicon.png">
+</head>
+
+<body>
+
+<header>
+
+    <div class="logo">
+        <a href="../index.html">
+        <h1>
+            <i class="fa-solid fa-motorcycle"></i>
+            Yamaha Store
+        </h1>
+        </a>
+    </div>
+
+    <div class="search">
+        <input type="text" placeholder="Pesquisar motos">
+        <button>
+            <i class="fa-solid fa-magnifying-glass"></i>
+        </button>
+    </div>
+
+    <div class="menu">
+        <button><i class="fa-solid fa-heart"></i></button>
+        <button><i class="fa-solid fa-cart-shopping"></i></button>
+        <button><i class="fa-solid fa-user"></i> Entrar</button>
+    </div>
+
+</header>
+
+<main>
+
+<section class="produtos">
+
+    <h2>
+        <i class="fa-solid fa-heart"></i>
+        Meus Favoritos
+    </h2>
+
+    <!-- 🔥 ISSO AQUI TEM QUE SER IGUAL AO JS -->
+    <div id="lista-favoritos"></div>
+
+</section>
+
+</main>
+
+<!-- 🔥 IMPORTANTE: tem que carregar o app.js -->
+
+<script src="../js/produtos.js"></script>
+<script src="../js/app.js"></script>
+
+
+</body>
+</html>

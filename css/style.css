@@ -1,0 +1,1233 @@
+/* ==========================
+   RESET
+========================== */
+
+#mensagem-pesquisa{
+    display: none;
+    text-align: center;
+    padding: 60px 20px;
+}
+
+#mensagem-pesquisa h2{
+    color: #555;
+    font-size: 30px;
+}
+
+#saldo-usuario{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-size: 18px;
+    font-weight: bold;
+    color: #fff;
+
+    min-width: 180px;
+    text-align: center;
+}
+
+a{
+    color: inherit;
+    text-decoration: none;
+}
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+
+    font-family:"Poppins", sans-serif;
+    background:#f5f5f5;
+    color:#222;
+
+}
+
+/* ==========================
+   HEADER
+========================== */
+
+header{
+
+    background:#d6001c;
+    height:80px;
+
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+
+    padding:0 60px;
+
+    color:white;
+
+    position:sticky;
+    top:0;
+    z-index:999;
+
+}
+
+.logo h1{
+
+    font-size:30px;
+    display:flex;
+    align-items:center;
+    gap:12px;
+
+}
+
+.logo i{
+
+    font-size:28px;
+
+}
+
+.search{
+
+    width:500px;
+    display:flex;
+
+}
+
+.search input{
+
+    width:100%;
+    border:none;
+
+    padding:12px 15px;
+
+    border-radius:8px 0 0 8px;
+
+    font-size:16px;
+
+    outline:none;
+
+}
+
+.search button{
+
+    border:none;
+
+    padding:0 20px;
+
+    background:#0038A8;
+
+    color:white;
+
+    border-radius:0 8px 8px 0;
+
+    cursor:pointer;
+
+    transition:.3s;
+
+}
+
+.search button:hover{
+
+    background:#00296f;
+
+}
+
+.menu{
+
+    display:flex;
+    gap:15px;
+    align-items: center;
+
+}
+
+.menu button{
+
+    border:none;
+
+    background:white;
+
+    color:#d6001c;
+
+    padding:10px 16px;
+
+    border-radius:8px;
+
+    cursor:pointer;
+
+    font-weight:bold;
+
+    transition:.3s;
+
+}
+
+.menu button:hover{
+
+    background:#ececec;
+
+}
+
+.menu i{
+
+    font-size:17px;
+
+}
+
+/* ==========================
+   BANNER
+========================== */
+
+.banner{
+
+    height:500px;
+
+    background:
+    linear-gradient(
+        to right,
+        rgba(0,0,0,.70),
+        rgba(0,0,0,.35),
+        rgba(0,0,0,0)
+    ),
+    url("../imagens/foto da frente da yamaha de timba city.jpeg");
+
+    background-size:cover;
+    background-position:center 35%;
+
+    display:flex;
+    align-items:center;
+
+    padding-left:80px;
+
+}
+
+.banner-texto{
+
+    color:white;
+    max-width:520px;
+
+}
+
+.banner-texto h1{
+
+    font-size:55px;
+    margin-bottom:20px;
+
+}
+
+.banner-texto p{
+
+    font-size:22px;
+    margin-bottom:35px;
+    line-height:1.5;
+
+}
+
+.btn-banner{
+
+    display:inline-block;
+
+    background:#d6001c;
+
+    color:white;
+
+    padding:15px 35px;
+
+    border-radius:8px;
+
+    text-decoration:none;
+
+    font-size:18px;
+
+    font-weight:bold;
+
+    transition:.3s;
+
+}
+
+.btn-banner:hover{
+
+    background:#a80017;
+
+}
+
+/* ==========================
+   CATEGORIAS
+========================== */
+
+.categorias{
+
+    background:white;
+
+    display:flex;
+
+    justify-content:center;
+
+    gap:55px;
+
+    padding:35px;
+
+}
+
+.categoria{
+
+    width:120px;
+
+    text-align:center;
+
+    cursor:pointer;
+
+    transition:.3s;
+
+    text-decoration: none;
+
+    color: #222;
+
+}
+
+.categoria span{
+
+    display:block;
+
+}
+
+.categoria i{
+
+    font-size:42px;
+
+    color:#d6001c;
+
+    transition:.3s;
+
+}
+
+.categoria p{
+
+    margin-top:12px;
+
+    font-weight:600;
+
+    color:#333;
+
+}
+
+.categoria:hover{
+
+    transform:translateY(-8px);
+
+}
+
+.categoria:hover i{
+
+    transform:scale(1.15);
+
+}
+
+/* ==========================
+   PRODUTOS
+========================== */
+
+.produtos{
+
+    padding:60px;
+
+}
+
+.produtos h2{
+
+    font-size:32px;
+
+    color:#222;
+
+    margin-bottom:35px;
+
+    display:flex;
+
+    align-items:center;
+
+    gap:10px;
+
+}
+
+.produtos h2 i{
+
+    color:#d6001c;
+
+}
+
+#lista-produtos{
+
+    display:grid;
+
+    grid-template-columns:repeat(4,1fr);
+
+    gap:30px;
+
+}
+
+/* ==========================
+   CARD
+========================== */
+
+.card{
+
+    position:relative;
+
+    background:white;
+
+    border-radius:15px;
+
+    overflow:hidden;
+
+    box-shadow:0 5px 18px rgba(0,0,0,.08);
+
+    display:flex;
+
+    flex-direction:column;
+
+    transition:.3s;
+
+}
+
+.card:hover{
+
+    transform:translateY(-8px);
+
+    box-shadow:0 12px 28px rgba(0,0,0,.18);
+
+}
+
+.card img{
+
+    width:100%;
+
+    height:240px;
+
+    object-fit:contain;
+
+    padding:20px;
+
+    background:white;
+
+}
+
+.favorito{
+
+    position:absolute;
+
+    top:15px;
+
+    right:15px;
+
+    color:#d6001c;
+
+    font-size:22px;
+
+    cursor:pointer;
+
+    transition:.3s;
+
+}
+
+.favorito:hover{
+
+    transform:scale(1.2);
+
+}
+
+.card-info{
+
+    padding:20px;
+
+    display:flex;
+
+    flex-direction:column;
+
+    flex:1;
+
+}
+
+.card-info h3{
+
+    font-size:20px;
+
+    margin-bottom:12px;
+
+    min-height:50px;
+
+}
+
+.preco{
+
+    color:#d6001c;
+
+    font-size:28px;
+
+    font-weight:bold;
+
+    margin-bottom:12px;
+
+}
+
+.descricao{
+
+    color:#666;
+
+    font-size:14px;
+
+    margin-bottom:15px;
+
+    line-height:1.5;
+
+}
+
+.avaliacao{
+
+    color:#ffb400;
+
+    margin-bottom:20px;
+
+    font-size:15px;
+
+}
+
+.avaliacao span{
+
+    color:#555;
+
+    font-weight:bold;
+
+}
+
+.btn-detalhes{
+
+    width:100%;
+
+    height:50px;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    gap:10px;
+
+    border:none;
+
+    border-radius:8px;
+
+    background:#d6001c;
+
+    color:white;
+
+    font-size:18px;
+
+    cursor:pointer;
+
+    transition:.3s;
+
+}
+
+.btn-detalhes:hover{
+
+    background:#a80017;
+
+}
+
+/* ==========================
+   BOTÃO VER TODAS
+========================== */
+
+.ver-mais{
+
+    text-align:center;
+
+    margin:50px 0 80px;
+
+}
+
+.ver-todas{
+
+    display:inline-flex;
+
+    align-items:center;
+
+    gap:10px;
+
+    background:#0038A8;
+
+    color:white;
+
+    text-decoration:none;
+
+    padding:16px 34px;
+
+    border-radius:10px;
+
+    font-size:18px;
+
+    font-weight:bold;
+
+    transition:.3s;
+
+}
+
+.ver-todas:hover{
+
+    background:#00296f;
+
+    transform:translateY(-3px);
+
+}
+
+/* ==========================
+   PÁGINA MOTOS
+========================== */
+
+main{
+
+    min-height:100vh;
+
+}
+
+.titulo-pagina{
+
+    text-align:center;
+
+    margin:50px 0 35px;
+
+    font-size:40px;
+
+    color:#d6001c;
+
+}
+
+/* ==========================
+   PRODUTO
+========================== */
+
+.produto-detalhes{
+
+    display:flex;
+
+    gap:60px;
+
+    padding:60px;
+
+    background:white;
+
+}
+
+.produto-imagem{
+
+    flex:1;
+
+    text-align:center;
+
+}
+
+.produto-imagem img{
+
+    width:100%;
+
+    max-width:500px;
+
+    object-fit:contain;
+
+}
+
+.produto-info{
+
+    flex:1;
+
+}
+
+.produto-info h1{
+
+    font-size:42px;
+
+    margin-bottom:20px;
+
+}
+
+.ficha-tecnica{
+
+    margin:60px;
+
+}
+
+.ficha-tecnica h2{
+
+    margin-bottom:20px;
+
+}
+
+.ficha-tecnica table{
+
+    width:100%;
+
+    border-collapse:collapse;
+
+    background:white;
+
+}
+
+.ficha-tecnica td{
+
+    border:1px solid #ddd;
+
+    padding:15px;
+
+}
+
+.ficha-tecnica tr:nth-child(even){
+
+    background:#f5f5f5;
+
+}
+/* ==========================
+   CARRINHO
+========================== */
+
+.total-carrinho{
+
+    margin-top:40px;
+
+    text-align:right;
+
+}
+
+.total-carrinho h2{
+
+    margin-bottom:20px;
+
+    color:#d6001c;
+
+}
+
+.remover{
+
+    width:100%;
+
+    margin-top:15px;
+
+    padding:12px;
+
+    background:#555;
+
+    color:white;
+
+    border:none;
+
+    border-radius:8px;
+
+    cursor:pointer;
+
+    transition:.3s;
+
+}
+
+.remover:hover{
+
+    background:#222;
+
+}
+
+.curtido {
+    transform: scale(1.3);
+    transition: 0.2s;
+    color: red;
+}
+
+#btn-carrinho {
+    background: #d6001c;
+    color: white;
+
+    padding: 15px 20px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+
+    font-size: 16px;
+    font-weight: bold;
+
+    border: none;
+    border-radius: 8px;
+
+    cursor: pointer;
+
+    width: 100%;
+    max-width: 280px;
+
+    white-space: nowrap;
+}
+
+
+
+
+
+.btn-logout {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+
+    padding: 8px 12px;
+    background: red;
+    color: white;
+    border: none;
+    border-radius: 6px;
+
+    cursor: pointer;
+}
+
+.btn-logout:hover {
+    background: darkred;
+}
+/*========================
+Botão flutuante
+==========================*/
+.botao-flutuante {
+
+    position: fixed;
+
+    right: 25px;
+    bottom: 25px;
+
+    width: 70px;
+    height: 70px;
+
+    background: white;
+
+    border-radius: 50%;
+
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+
+    overflow: hidden;
+
+    box-shadow: 0 5px 20px rgba(0,0,0,.5);
+
+    z-index: 9999;
+
+    transition: .3s;
+
+}
+
+
+.botao-flutuante img {
+
+    width: 100%;
+    height: 100%;
+
+    object-fit: contain;
+
+}
+
+
+.botao-flutuante:hover {
+
+    transform: scale(1.15) translateY(-5px);
+
+    box-shadow: 0 10px 30px rgba(0,0,0,.6);
+
+}
+
+/*=====================================
+Adaptação para celular
+======================================*/
+
+@media (max-width: 768px) {
+
+
+    /* HEADER */
+
+    header {
+
+        height: auto;
+
+        flex-direction: column;
+
+        gap: 20px;
+
+        padding: 20px;
+
+        position: relative;
+
+    }
+
+
+    .logo h1 {
+
+        font-size: 24px;
+
+    }
+
+
+    .search {
+
+        width: 100%;
+
+    }
+
+
+    .menu {
+
+        width: 100%;
+
+        justify-content: center;
+
+        flex-wrap: wrap;
+
+    }
+
+
+    .menu button {
+
+        padding: 8px 12px;
+
+        font-size: 14px;
+
+    }
+
+
+
+    /* BANNER */
+
+    .banner {
+
+        height: 450px;
+
+        padding: 30px;
+
+        background-position:center;
+
+    }
+
+
+    .banner-texto h1 {
+
+        font-size: 35px;
+
+    }
+
+
+    .banner-texto p {
+
+        font-size: 18px;
+
+    }
+
+
+
+    /* CATEGORIAS */
+
+    .categorias {
+
+        display:grid;
+
+        grid-template-columns: repeat(2,1fr);
+
+        gap:30px;
+
+        padding:30px;
+
+    }
+
+
+    .categoria {
+
+        width:auto;
+
+    }
+
+
+
+    /* PRODUTOS */
+
+    .produtos {
+
+        padding:30px 20px;
+
+    }
+
+
+    .produtos h2 {
+
+        font-size:25px;
+
+    }
+
+
+    #lista-produtos {
+
+        grid-template-columns:1fr;
+
+        gap:20px;
+
+    }
+
+
+
+    /* CARDS */
+
+    .card img {
+
+        height:220px;
+
+    }
+
+
+
+    /* PRODUTO DETALHES */
+
+    .produto-detalhes {
+
+        flex-direction:column;
+
+        padding:30px 20px;
+
+        gap:30px;
+
+    }
+
+
+    .produto-info h1 {
+
+        font-size:32px;
+
+    }
+
+
+
+    .ficha-tecnica {
+
+        margin:30px 20px;
+
+    }
+
+
+    .ficha-tecnica table {
+
+        font-size:14px;
+
+    }
+
+
+
+    /* BOTÃO FLUTUANTE */
+
+    .botao-flutuante {
+
+        width:60px;
+
+        height:60px;
+
+        right:15px;
+
+        bottom:15px;
+
+    }
+
+
+}
+
+/*===============================================
+Adaptção para celular antigo
+===============================================*/
+@media (max-width: 480px) {
+
+
+    .logo h1 {
+
+        font-size:20px;
+
+    }
+
+
+    .menu button {
+
+        width:100%;
+
+    }
+
+
+    .categorias {
+
+        grid-template-columns:1fr;
+
+    }
+
+
+    .banner-texto h1 {
+
+        font-size:28px;
+
+    }
+
+
+    .banner-texto p {
+
+        font-size:16px;
+
+    }
+
+
+    .preco {
+
+        font-size:24px;
+
+    }
+
+
+}
+
+/*===================================
+Rodapé
+===================================*/
+.rodape {
+
+    background: linear-gradient(
+        180deg,
+        #050505,
+        #1c1c1c,
+        #555
+    );
+
+    color:white;
+
+    padding:60px 20px;
+
+    margin-top:60px;
+
+    text-align:center;
+
+}
+
+
+.logos-rodape {
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    gap:40px;
+
+    flex-wrap:wrap;
+
+    margin-bottom:40px;
+
+}
+
+
+.logos-rodape img {
+
+    width:130px;
+
+    height:130px;
+
+    object-fit:contain;
+
+    background:white;
+
+    padding:12px;
+
+    border-radius:20px;
+
+
+    transition:
+    transform .4s ease,
+    box-shadow .4s ease;
+
+}
+
+
+/* efeito de destaque ao passar o mouse */
+
+.logos-rodape img:hover {
+
+    transform:scale(1.15) translateY(-10px);
+
+    box-shadow:
+    0 15px 30px rgba(0,0,0,.5);
+
+}
+
+
+
+.texto-rodape {
+
+    max-width:850px;
+
+    margin:auto;
+
+}
+
+
+.texto-rodape h3,
+.desenvolvedores h3 {
+
+    font-size:28px;
+
+    margin-bottom:20px;
+
+    color:#fff;
+
+}
+
+
+.texto-rodape p {
+
+    font-size:17px;
+
+    line-height:1.8;
+
+    color:#ddd;
+
+}
+
+
+
+.desenvolvedores {
+
+    margin-top:45px;
+
+    padding-top:30px;
+
+    border-top:1px solid rgba(255,255,255,.3);
+
+}
+
+
+.desenvolvedores p {
+
+    color:#ddd;
+
+    font-size:16px;
+
+    line-height:1.6;
+
+}
+
+
+.desenvolvedores strong {
+
+    color:white;
+
+    font-size:18px;
+
+}
+
+
+.transicao-rodape {
+
+    height: 120px;
+
+    background: linear-gradient(
+        to bottom,
+        #f5f5f5,
+        #050505
+    );
+
+}

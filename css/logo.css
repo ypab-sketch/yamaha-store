@@ -1,0 +1,153 @@
+.banner {
+    position: relative;
+}
+
+#logomarca {
+    position: absolute;
+    right: 30px;
+    bottom: 20px;
+}
+
+#logomarca img {
+    width: 120px;
+    height: auto;
+}
+
+
+/*===================================
+Rodapé
+===================================*/
+.rodape {
+
+    background: linear-gradient(
+        180deg,
+        #050505,
+        #1c1c1c,
+        #555
+    );
+
+    color:white;
+
+    padding:60px 20px;
+
+    margin-top:60px;
+
+    text-align:center;
+
+}
+
+
+.logos-rodape {
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    gap:40px;
+
+    flex-wrap:wrap;
+
+    margin-bottom:40px;
+
+}
+
+
+.logos-rodape img {
+
+    width:130px;
+
+    height:130px;
+
+    object-fit:contain;
+
+    background:white;
+
+    padding:12px;
+
+    border-radius:20px;
+
+
+    transition:
+    transform .4s ease,
+    box-shadow .4s ease;
+
+}
+
+
+/* efeito de destaque ao passar o mouse */
+
+.logos-rodape img:hover {
+
+    transform:scale(1.15) translateY(-10px);
+
+    box-shadow:
+    0 15px 30px rgba(0,0,0,.5);
+
+}
+
+
+
+.texto-rodape {
+
+    max-width:850px;
+
+    margin:auto;
+
+}
+
+
+.texto-rodape h3,
+.desenvolvedores h3 {
+
+    font-size:28px;
+
+    margin-bottom:20px;
+
+    color:#fff;
+
+}
+
+
+.texto-rodape p {
+
+    font-size:17px;
+
+    line-height:1.8;
+
+    color:#ddd;
+
+}
+
+
+
+.desenvolvedores {
+
+    margin-top:45px;
+
+    padding-top:30px;
+
+    border-top:1px solid rgba(255,255,255,.3);
+
+}
+
+
+.desenvolvedores p {
+
+    color:#ddd;
+
+    font-size:16px;
+
+    line-height:1.6;
+
+}
+
+
+.desenvolvedores strong {
+
+    color:white;
+
+    font-size:18px;
+
+}
