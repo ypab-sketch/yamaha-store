@@ -1,2 +1,17 @@
-# yamaha-store
-Um site feito pela estudante LAVINNYA SOFIA SANTANA DO NASCIMENTO do 2ºB no ano de 2026.
+# Yamaha Store
+
+Projeto desenvolvido por estudantes através do Projeto Florescendo Talentos.
+
+## Tecnologias
+
+- HTML5
+- CSS3
+- JavaScript
+
+## Desenvolvedora
+
+Lavinnya Sofia Santana do Nascimento
+
+## Ano
+
+2026
