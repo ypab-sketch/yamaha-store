@@ -765,16 +765,11 @@ main{
 
 
 .btn-logout {
-    position: absolute;
-    top: 15px;
-    right: 15px;
-
     padding: 8px 12px;
     background: red;
     color: white;
     border: none;
     border-radius: 6px;
-
     cursor: pointer;
 }
 
@@ -883,12 +878,7 @@ Adaptação para celular
     }
 
     /* botão Sair volta a ficar dentro do fluxo do header */
-    .btn-logout {
-        position: static;
-        margin: 0 auto 10px;
-        display: block;
-        width: fit-content;
-    }
+
 
     /* BANNER */
 
