@@ -20,12 +20,12 @@ body {
 
     background: #fff;
 
-    padding: 35px;
+    padding: 40px 30px;
 
-    border-radius: 12px;
+    border-radius: 15px;
 
-    width: 100%;
-    max-width: 320px;
+    width: 90%;
+    max-width: 420px;
 
     text-align: center;
 
@@ -118,40 +118,49 @@ body {
 
 @media (max-width: 480px) {
 
-
     body {
-
-        padding: 15px;
-
+        padding: 20px;
     }
 
 
     .login-box {
 
-        padding: 25px 20px;
+        width: 95%;
 
-        border-radius: 10px;
+        padding: 45px 25px;
+
+        border-radius: 18px;
 
     }
 
 
     .login-box h2 {
 
-        font-size: 24px;
+        font-size: 30px;
+
+        margin-bottom: 30px;
 
     }
 
 
     .login-box input {
 
-        padding: 14px;
+        padding: 16px;
+
+        font-size: 17px;
+
+        margin: 12px 0;
 
     }
 
 
     .login-box button {
 
-        padding: 14px;
+        padding: 16px;
+
+        font-size: 17px;
+
+        margin-top: 15px;
 
     }
 
