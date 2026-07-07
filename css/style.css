@@ -836,60 +836,59 @@ Botão flutuante
 Adaptação para celular
 ======================================*/
 
+/* =====================================
+   Adaptação para celular (HEADER/MENU)
+====================================== */
 @media (max-width: 768px) {
 
-
-    /* HEADER */
-
     header {
-
         height: auto;
-
         flex-direction: column;
-
-        gap: 20px;
-
-        padding: 20px;
-
+        gap: 15px;
+        padding: 15px 20px 20px;
         position: relative;
-
     }
-
 
     .logo h1 {
-
-        font-size: 24px;
-
+        font-size: 22px;
     }
-
 
     .search {
-
         width: 100%;
-
     }
-
 
     .menu {
-
         width: 100%;
-
         justify-content: center;
-
+        gap: 10px;
         flex-wrap: wrap;
-
     }
 
+    .menu a {
+        flex: 1 1 auto;
+    }
 
     .menu button {
-
-        padding: 8px 12px;
-
-        font-size: 14px;
-
+        width: 100%;
+        padding: 10px 8px;
+        font-size: 13px;
+        white-space: nowrap;
     }
 
+    #saldo-usuario {
+        min-width: auto;
+        width: 100%;
+        order: -1; /* mostra o saldo antes dos botões */
+        font-size: 16px;
+    }
 
+    /* botão Sair volta a ficar dentro do fluxo do header */
+    .btn-logout {
+        position: static;
+        margin: 0 auto 10px;
+        display: block;
+        width: fit-content;
+    }
 
     /* BANNER */
 
@@ -1028,28 +1027,30 @@ Adaptação para celular
 
     }
 
-
 }
+
 
 /*===============================================
 Adaptção para celular antigo
 ===============================================*/
 @media (max-width: 480px) {
 
-
-    .logo h1 {
-
-        font-size:20px;
-
+    .menu {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 8px;
     }
-
 
     .menu button {
-
-        width:100%;
-
+        font-size: 11px;
+        padding: 10px 4px;
+        flex-direction: column;
+        gap: 4px;
     }
 
+    .menu i {
+        font-size: 15px;
+    }
 
     .categorias {
 
